@@ -14,7 +14,7 @@
 
             switch (operationType)
             {
-                case "+":
+                case "Add":
                     return Addition.Calculate(firstStack, secondStack);
                 case "-":
                 case "*":

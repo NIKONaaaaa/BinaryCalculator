@@ -9,7 +9,8 @@
             string firstNumber = Console.ReadLine();
 
             Console.Write("Choose operation type(+ - * /): ");
-            string operationType = Console.ReadLine();
+            string operationType = Console.ReadKey().Key.ToString();
+            Console.WriteLine();
 
             Console.Write("Enter second binary number    : ");
             string secondNumber = Console.ReadLine();
