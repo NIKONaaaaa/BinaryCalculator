@@ -22,6 +22,7 @@
 
         public static void ParseNumbers(string numberOne, string numberTwo)
         {
+            new Parser();
             firstNumber = numberOne;
             secondNumber = numberTwo;
             lengthDifference = firstNumber.Length - secondNumber.Length;

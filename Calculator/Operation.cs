@@ -8,7 +8,6 @@
 
         public static string Perform(string firstNumber, string operationType, string secondNumber)
         {
-            new Parser();
             Parser.ParseNumbers(firstNumber, secondNumber);
             firstStack = Parser.FirstStack;
             secondStack = Parser.SecondStack;
