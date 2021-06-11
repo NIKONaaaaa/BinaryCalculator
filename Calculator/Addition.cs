@@ -11,12 +11,10 @@
 
         public static string Result { get; set; }
 
-        public static string Calculate(string numberOne, string numberTwo)
+        public static string Calculate(Stack<char> stackOne, Stack<char> stackTwo)
         {
-            new Parser();
-            Parser.ParseNumbers(numberOne, numberTwo);
-            firstStack = Parser.FirstStack;
-            secondStack = Parser.SecondStack;
+            firstStack = stackOne;
+            secondStack = stackTwo;
             isCarried = false;
             numberResult = new Stack<char>();
             Result = "";
