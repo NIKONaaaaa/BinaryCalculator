@@ -16,15 +16,17 @@
             lengthDifference = 0;
             FirstStack = new Stack<char>();
             SecondStack = new Stack<char>();
-            firstNumber = "";
-            secondNumber = "";
+        }
+
+        internal Parser(string numberOne, string numberTwo) : this()
+        {
+            firstNumber = numberOne;
+            secondNumber = numberTwo;
         }
 
         public static void ParseNumbers(string numberOne, string numberTwo)
         {
-            new Parser();
-            firstNumber = numberOne;
-            secondNumber = numberTwo;
+            new Parser(numberOne, numberTwo);
             lengthDifference = firstNumber.Length - secondNumber.Length;
 
             if (0 < lengthDifference)
