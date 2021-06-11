@@ -13,7 +13,6 @@
 
         internal Parser()
         {
-            lengthDifference = 0;
             FirstStack = new Stack<char>();
             SecondStack = new Stack<char>();
         }
@@ -22,12 +21,12 @@
         {
             firstNumber = numberOne;
             secondNumber = numberTwo;
+            lengthDifference = firstNumber.Length - secondNumber.Length;
         }
 
         public static void ParseNumbers(string numberOne, string numberTwo)
         {
             new Parser(numberOne, numberTwo);
-            lengthDifference = firstNumber.Length - secondNumber.Length;
 
             if (0 < lengthDifference)
             {
