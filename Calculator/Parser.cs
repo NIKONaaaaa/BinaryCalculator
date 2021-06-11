@@ -11,22 +11,13 @@
         public static Stack<char> FirstStack { get; set; }
         public static Stack<char> SecondStack { get; set; }
 
-        internal Parser()
-        {
-            FirstStack = new Stack<char>();
-            SecondStack = new Stack<char>();
-        }
-
-        internal Parser(string numberOne, string numberTwo) : this()
+        public static void ParseNumbers(string numberOne, string numberTwo)
         {
             firstNumber = numberOne;
             secondNumber = numberTwo;
             lengthDifference = firstNumber.Length - secondNumber.Length;
-        }
-
-        public static void ParseNumbers(string numberOne, string numberTwo)
-        {
-            new Parser(numberOne, numberTwo);
+            FirstStack = new Stack<char>();
+            SecondStack = new Stack<char>();
 
             if (0 < lengthDifference)
             {
