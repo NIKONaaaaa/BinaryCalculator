@@ -31,17 +31,29 @@
                                 break;
                             case true:
                                 numberResult.Push('1');
-                                isCarried = false;
                                 break;
                         }
                         break;
 
                     case '1' when secondStack.Peek() == '0':
+                        switch (isCarried)
+                        {
+                            case false:
+                                numberResult.Push('1');
+                                break;
+                            case true:
+                                numberResult.Push('0');
+                                isCarried = false;
+                                break;
+                        }
+                        break;
+
                     case '0' when secondStack.Peek() == '1':
                         switch (isCarried)
                         {
                             case false:
                                 numberResult.Push('1');
+                                isCarried = true;
                                 break;
                             case true:
                                 numberResult.Push('0');
@@ -54,7 +66,6 @@
                         {
                             case false:
                                 numberResult.Push('0');
-                                isCarried = true;
                                 break;
                             case true:
                                 numberResult.Push('1');

@@ -18,7 +18,7 @@
                 case '+':
                     return Addition.Calculate(firstStack, secondStack);
                 case '-':
-                    
+                    return Subtraction.Calculate(firstStack, secondStack);
                 case '*':
                 case '/':
                     return "Not implemented yet!";
