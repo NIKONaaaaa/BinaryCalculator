@@ -6,7 +6,7 @@
         private static Stack<char> firstStack;
         private static Stack<char> secondStack;
 
-        public static string Perform(string firstNumber, string operationType, string secondNumber)
+        public static string Perform(string firstNumber, char operationType, string secondNumber)
         {
             Parser.ParseNumbers(firstNumber, secondNumber);
             firstStack = Parser.FirstStack;
@@ -14,11 +14,11 @@
 
             switch (operationType)
             {
-                case "Add":
+                case '+':
                     return Addition.Calculate(firstStack, secondStack);
-                case "-":
-                case "*":
-                case "/":
+                case '-':
+                case '*':
+                case '/':
                     return "Not implemented yet!";
                 default:
                     return "Wrong operation type!";
