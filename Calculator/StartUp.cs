@@ -18,6 +18,8 @@
             Console.Write("The result is                 : ");
             string result = Operation.Perform(firstNumber, operationType, secondNumber);
             Console.WriteLine(result);
+
+            //TODO: Implement operations with negative numbers.
         }
     }
 }
