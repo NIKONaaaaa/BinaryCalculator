@@ -85,6 +85,11 @@
 
             while (0 < numberResult.Count)
             {
+                while (numberResult.Peek() == '0' && numberResult.Count > 1)
+                {
+                    numberResult.Pop();
+                }
+
                 Result += numberResult.Pop();
             }
 
