@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Calculator.Operations
 {
     using System.Collections.Generic;
 
