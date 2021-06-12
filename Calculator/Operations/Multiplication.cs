@@ -42,7 +42,6 @@
                                     isCarried = false;
                                     break;
                             }
-
                             break;
 
                         case '1' when secondStack.Peek() == '0':
@@ -56,7 +55,6 @@
                                     numberResult.Push('0');
                                     break;
                             }
-
                             break;
 
                         case '1' when secondStack.Peek() == '1':
@@ -70,7 +68,6 @@
                                     numberResult.Push('1');
                                     break;
                             }
-
                             break;
                     }
 
