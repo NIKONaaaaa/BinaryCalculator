@@ -20,6 +20,7 @@
                 case '-':
                     return Subtraction.Calculate(firstStack, secondStack);
                 case '*':
+                    return Multiplication.Calculate(firstStack, secondStack, BinaryToDecimal.Converter(secondNumber));
                 case '/':
                     return "Not implemented yet!";
                 default:
