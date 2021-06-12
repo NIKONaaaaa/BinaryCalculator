@@ -1,8 +1,5 @@
-﻿using System.Linq;
-
-namespace Calculator.Operations
+﻿namespace Calculator.Operations
 {
-    using System;
     using System.Collections.Generic;
 
     public class Multiplication
@@ -14,6 +11,8 @@ namespace Calculator.Operations
         private static int iterations;
 
         public static string Result { get; set; }
+
+        //TODO: Fix this mess.
 
         public static string Calculate(Stack<char> stackOne, Stack<char> stackTwo, int iterationNumber)
         {
