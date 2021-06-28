@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
     using Operations;
-    public class Operation
+    public class OperationSelector
     {
         private static Stack<char> firstStack;
         private static Stack<char> secondStack;

@@ -16,7 +16,7 @@
             string secondNumber = Console.ReadLine();
 
             Console.Write("The result is                 : ");
-            string result = Operation.Perform(firstNumber, operationType, secondNumber);
+            string result = OperationSelector.Perform(firstNumber, operationType, secondNumber);
             Console.WriteLine(result);
 
             //TODO: Implement operations with negative numbers.
