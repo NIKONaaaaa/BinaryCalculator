@@ -1,22 +1,16 @@
 ﻿namespace Calculator.Operations
 {
-    using Services;
     using System.Collections.Generic;
 
     public class Addition
     {
         private static bool isCarried;
         private static Stack<char> numberResult;
-        private static Stack<char> firstStack;
-        private static Stack<char> secondStack;
-
+        
         public static string Result { get; set; }
 
-        public static string Calculate(string numberOne, string numberTwo)
+        public static string Calculate(Stack<char> firstStack, Stack<char> secondStack)
         {
-            Parser.ParseNumbers(numberOne, numberTwo);
-            firstStack = Parser.FirstStack;
-            secondStack = Parser.SecondStack;
             isCarried = false;
             numberResult = new Stack<char>();
             Result = "";
@@ -37,7 +31,6 @@
                                 break;
                         }
                         break;
-
                     case '1' when secondStack.Peek() == '0':
                     case '0' when secondStack.Peek() == '1':
                         switch (isCarried)
@@ -50,7 +43,6 @@
                                 break;
                         }
                         break;
-
                     case '1' when secondStack.Peek() == '1':
                         switch (isCarried)
                         {

@@ -8,11 +8,14 @@
             switch (operationType)
             {
                 case '+':
-                    return Addition.Calculate(firstNumber, secondNumber);
+                    Parser.BothNumbers(firstNumber, secondNumber);
+                    return Addition.Calculate(Parser.FirstStack, Parser.SecondStack);
                 case '-':
-                    return Subtraction.Calculate(firstNumber, secondNumber);
+                    Parser.BothNumbers(firstNumber, secondNumber);
+                    return Subtraction.Calculate(Parser.FirstStack, Parser.SecondStack);
                 case '*':
-                    return Multiplication.Calculate(firstNumber, secondNumber);
+                    BinaryToDecimal.Converter(secondNumber);
+                    return Multiplication.Calculate(firstNumber, BinaryToDecimal.DecimalResult);
                 case '/':
                     return "Not implemented yet!";
                 default:

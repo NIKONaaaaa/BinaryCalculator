@@ -11,7 +11,7 @@
         public static Stack<char> FirstStack { get; set; }
         public static Stack<char> SecondStack { get; set; }
 
-        public static void ParseNumbers(string numberOne, string numberTwo)
+        public static void BothNumbers(string numberOne, string numberTwo)
         {
             firstNumber = numberOne;
             secondNumber = numberTwo;
