@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Calculator.Services
 {
     using System;
     using System.Collections.Generic;

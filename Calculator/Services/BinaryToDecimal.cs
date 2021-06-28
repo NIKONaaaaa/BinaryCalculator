@@ -1,4 +1,4 @@
-﻿namespace Calculator
+﻿namespace Calculator.Services
 {
     using System;
     public class BinaryToDecimal

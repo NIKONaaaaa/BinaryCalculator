@@ -1,5 +1,6 @@
 ﻿namespace Calculator.Operations
 {
+    using Services;
     using System.Collections.Generic;
 
     public class Addition
@@ -11,10 +12,11 @@
 
         public static string Result { get; set; }
 
-        public static string Calculate(Stack<char> stackOne, Stack<char> stackTwo)
+        public static string Calculate(string numberOne, string numberTwo)
         {
-            firstStack = stackOne;
-            secondStack = stackTwo;
+            Parser.ParseNumbers(numberOne, numberTwo);
+            firstStack = Parser.FirstStack;
+            secondStack = Parser.SecondStack;
             isCarried = false;
             numberResult = new Stack<char>();
             Result = "";
