@@ -5,11 +5,9 @@
 
     public class Multiplication
     {
-        private static bool isCarried;
-        private static Stack<char> numberResult;
+        private static int iterations;
         private static Stack<char> firstStack;
         private static Stack<char> secondStack;
-        private static int iterations;
 
         public static string Result { get; set; }
 
