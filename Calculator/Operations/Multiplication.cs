@@ -5,11 +5,11 @@
     {
         public static string Result { get; set; }
 
-        public static string Calculate(string firstNumber, int iterationCount)
+        public static string Calculate(string firstNumber, ulong iterationCount)
         {
             Result = "0";
 
-            for (int i = 0; i < iterationCount; i++)
+            for (ulong i = 0; i < iterationCount; i++)
             {
                 Result = OperationSelector.Perform(firstNumber, '+', Result);
             }

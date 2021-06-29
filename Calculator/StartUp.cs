@@ -8,8 +8,8 @@
             new Run().Start();
 
             //TODO: Implement operations with negative numbers.
-            //TODO: Implement large numbers.
             //TODO: Get rid of 42 in OperationSelector somehow.
+            //TODO: Implement longer numbers past ulong.
         }
     }
 }
