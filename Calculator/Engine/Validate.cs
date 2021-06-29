@@ -19,7 +19,7 @@
                     result += "0";
                     Console.Write("0");
                 }
-                else if (input.Key == ConsoleKey.Backspace)
+                else if (input.Key == ConsoleKey.Backspace && 0 < result.Length)
                 {
                     result = result[..^1];
                     Console.CursorLeft = Console.GetCursorPosition().Left - 1;
