@@ -21,7 +21,7 @@
                 Console.Write("Enter second binary number    : ");
                 string secondNumber = new Validator().Digit();
 
-                string result = OperationSelector.Perform(firstNumber, operationType, secondNumber);
+                string result = OperationSelector.Select(firstNumber, operationType, secondNumber);
 
                 Console.Clear();
 

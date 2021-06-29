@@ -4,7 +4,7 @@
     using Operations;
     public class OperationSelector
     {
-        public static string Perform(string firstNumber, char operationType, string secondNumber)
+        public static string Select(string firstNumber, char operationType, string secondNumber)
         {
             switch (operationType)
             {
