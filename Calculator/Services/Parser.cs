@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     public class Parser
     {
-        private static int lengthDifference;
+        private static int _lengthDifference;
         private static string _firstNumber;
         private static string _secondNumber;
         
@@ -15,20 +15,20 @@
         {
             _firstNumber = firstNumber;
             _secondNumber = secondNumber;
-            lengthDifference = _firstNumber.Length - _secondNumber.Length;
+            _lengthDifference = _firstNumber.Length - _secondNumber.Length;
             FirstStack = new Stack<char>();
             SecondStack = new Stack<char>();
 
-            if (0 < lengthDifference)
+            if (0 < _lengthDifference)
             {
-                for (int i = 0; i < Math.Abs(lengthDifference); i++)
+                for (int i = 0; i < Math.Abs(_lengthDifference); i++)
                 {
                     SecondStack.Push('0');
                 }
             }
-            else if (lengthDifference < 0)
+            else if (_lengthDifference < 0)
             {
-                for (int i = 0; i < Math.Abs(lengthDifference); i++)
+                for (int i = 0; i < Math.Abs(_lengthDifference); i++)
                 {
                     FirstStack.Push('0');
                 }

@@ -21,6 +21,8 @@
                 Console.Write("Enter second binary number    : ");
                 string secondNumber = new Validator().Digit();
 
+                string result = OperationSelector.Perform(firstNumber, operationType, secondNumber);
+
                 Console.Clear();
 
                 Console.Write("First number in binary        : ");
@@ -32,7 +34,6 @@
                 Console.Write("              in decimal      : ");
                 Console.WriteLine(BinaryToDecimal.Converter(secondNumber));
                 Console.Write("The result in binary          : ");
-                string result = OperationSelector.Perform(firstNumber, operationType, secondNumber);
                 Console.WriteLine(result);
                 Console.Write("           in decimal         : ");
                 Console.WriteLine(BinaryToDecimal.Converter(result));
