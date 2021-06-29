@@ -50,6 +50,7 @@
                                 break;
                             case true:
                                 _numberResult.Push('0');
+                                _isCarried = false;
                                 break;
                         }
                         break;
