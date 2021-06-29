@@ -18,8 +18,7 @@
                     BinaryToDecimal.Converter(secondNumber);
                     return Multiplication.Calculate(firstNumber, BinaryToDecimal.DecimalResult);
                 case '/':
-                    BinaryToDecimal.Converter(secondNumber);
-                    return Division.Calculate(firstNumber, BinaryToDecimal.DecimalResult);
+                    return Division.Calculate(firstNumber, secondNumber);
                 default:
                     return "42";
             }
