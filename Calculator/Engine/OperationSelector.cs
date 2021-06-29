@@ -1,5 +1,6 @@
-﻿namespace Calculator.Services
+﻿namespace Calculator.Engine
 {
+    using Services;
     using Operations;
     public class OperationSelector
     {
