@@ -8,7 +8,7 @@
             new Run().Start();
 
             //TODO: Implement operations with negative numbers.
-            //TODO: Implement division operations.
+            //TODO: Get rid of 42 in OperationSelector somehow.
         }
     }
 }

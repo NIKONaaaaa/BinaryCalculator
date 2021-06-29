@@ -17,9 +17,10 @@
                     BinaryToDecimal.Converter(secondNumber);
                     return Multiplication.Calculate(firstNumber, BinaryToDecimal.DecimalResult);
                 case '/':
-                    return "Not implemented yet!";
+                    BinaryToDecimal.Converter(secondNumber);
+                    return Division.Calculate(firstNumber, BinaryToDecimal.DecimalResult);
                 default:
-                    return "Wrong operation type!";
+                    return "42";
             }
         }
     }
