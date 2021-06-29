@@ -20,7 +20,6 @@
                     return "Not implemented yet!";
                 default:
                     return "Wrong operation type!";
-                    //TODO: Implement other operations.
             }
         }
     }

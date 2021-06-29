@@ -7,14 +7,15 @@
         public void Start()
         {
             Console.Write("Enter first binary number     : ");
-            string firstNumber = Console.ReadLine();
+            string firstNumber = new Validator().Digit();
+            Console.WriteLine();
 
             Console.Write("Choose operation type(+ - * /): ");
-            char operationType = Console.ReadKey().KeyChar;
+            char operationType = new Validator().Operation();
             Console.WriteLine();
 
             Console.Write("Enter second binary number    : ");
-            string secondNumber = Console.ReadLine();
+            string secondNumber = new Validator().Digit();
 
             Console.Clear();
 

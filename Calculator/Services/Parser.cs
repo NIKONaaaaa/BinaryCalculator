@@ -5,17 +5,17 @@
     public class Parser
     {
         private static int lengthDifference;
-        private static string firstNumber;
-        private static string secondNumber;
+        private static string _firstNumber;
+        private static string _secondNumber;
         
         public static Stack<char> FirstStack { get; set; }
         public static Stack<char> SecondStack { get; set; }
 
-        public static void BothNumbers(string numberOne, string numberTwo)
+        public static void BothNumbers(string firstNumber, string secondNumber)
         {
-            firstNumber = numberOne;
-            secondNumber = numberTwo;
-            lengthDifference = firstNumber.Length - secondNumber.Length;
+            _firstNumber = firstNumber;
+            _secondNumber = secondNumber;
+            lengthDifference = _firstNumber.Length - _secondNumber.Length;
             FirstStack = new Stack<char>();
             SecondStack = new Stack<char>();
 
@@ -34,8 +34,8 @@
                 }
             }
 
-            FirstStack = Populate(firstNumber, FirstStack);
-            SecondStack = Populate(secondNumber, SecondStack);
+            FirstStack = Populate(_firstNumber, FirstStack);
+            SecondStack = Populate(_secondNumber, SecondStack);
         }
 
         internal static Stack<char> Populate(string numberInput, Stack<char> resultStack)

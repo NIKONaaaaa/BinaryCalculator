@@ -6,9 +6,9 @@
         static void Main()
         {
             new Run().Start();
-            
+
             //TODO: Implement operations with negative numbers.
-            //TODO: Implement validation.
+            //TODO: Implement division operations.
         }
     }
 }
