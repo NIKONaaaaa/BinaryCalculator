@@ -1,6 +1,6 @@
 ﻿namespace Calculator.Operations
 {
-    using Services;
+    using Engine;
     public class Multiplication
     {
         public static string Result { get; set; }
@@ -11,7 +11,7 @@
 
             for (ulong i = 0; i < iterationCount; i++)
             {
-                Result = OperationSelector.Perform(firstNumber, '+', Result);
+                Result = Operation.Select(firstNumber, '+', Result);
             }
 
             return Result;
