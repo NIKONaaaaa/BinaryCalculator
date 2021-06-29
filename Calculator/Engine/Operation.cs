@@ -2,7 +2,7 @@
 {
     using Services;
     using Operations;
-    public class OperationSelector
+    public class Operation
     {
         public static string Select(string firstNumber, char operationType, string secondNumber)
         {
