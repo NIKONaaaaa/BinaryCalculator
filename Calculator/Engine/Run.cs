@@ -11,15 +11,15 @@
                 Console.Clear();
 
                 Console.Write("Enter first binary number     : ");
-                string firstNumber = new Validator().Digit();
+                string firstNumber = new Validate().Number();
                 Console.WriteLine();
 
                 Console.Write("Choose operation type(+ - * /): ");
-                char operationType = new Validator().Operation();
+                char operationType = new Validate().Operation();
                 Console.WriteLine();
 
                 Console.Write("Enter second binary number    : ");
-                string secondNumber = new Validator().Digit();
+                string secondNumber = new Validate().Number();
 
                 string result = Operation.Select(firstNumber, operationType, secondNumber);
 

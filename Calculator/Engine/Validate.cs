@@ -1,9 +1,9 @@
 ﻿namespace Calculator.Engine
 {
     using System;
-    public class Validator
+    public class Validate
     {
-        public string Digit()
+        public string Number()
         {
             string result = "";
             ConsoleKeyInfo input = Console.ReadKey(true);
